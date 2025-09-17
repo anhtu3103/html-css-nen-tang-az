@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+          width: 70%;
+          border-collapse: collapse;
+        }
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 15px;
+        }
+        tr:nth-child(odd) { background-color: yellowgreen; }
+        tr:nth-child(even) { background-color: goldenrod; }
+      </style>
+    <title>HTML table rowspan & colspan</title>
+</head>
+<body>
+    <h3>Table Colspan</h3>
+    <table>
+        <tr>
+          <th colspan="2">Name</th>
+          <th>Email</th>
+        </tr>
+        <tr>
+          <td style="width:10px;">Trung</td>
+          <td style="height:200px;">Quân</td>
+          <td>trungquandev.official@gmail.com</td>
+        </tr>
+      </table>
+
+      <h3>Table rowspan</h3>
+      <table>
+        <tr>
+          <th>Name</th>
+          <td>Trung Quân Dev 01</td>
+          <td>Trung Quân Dev 02</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Email</th>
+          <td>trungquandev.official@gmail.com</td>
+          <td>trungquandev.official@gmail.com</td>
+        </tr>
+        <tr>
+          <td>trungquandev.official@gmail.com</td>
+          <td>trungquandev.official@gmail.com</td>
+        </tr>
+      </table>
+     
+     
+</body>
+</html>
