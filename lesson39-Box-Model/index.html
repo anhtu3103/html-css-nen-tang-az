@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box model</title>
+
+    <style>
+        .box {
+          width: 200px;
+          height: 100px;
+          background: lightgray;
+          box-sizing: border-box;
+          /* box-sizing: content-box; */
+        }
+         .p-30 { padding: 30px; }
+        .border-10-solid-green {
+          border: 10px solid green;
+        }
+        .m-20 { margin: 20px; }
+    </style>
+</head>
+<body>
+    <div class="box p-30">Padding</div>
+    <div class="box border-10-solid-green">Border</div>
+    <div class="box m-20">Margin</div>
+</body>
+</html>
