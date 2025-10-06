@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+        .h-20 {
+            height: 20px;
+        }
+
+        .static {
+            width: 250px;
+            height: 100px;
+            background: lightblue;
+            position: static;
+            top: 20px;
+            left: 20px;
+        }
+
+        .relative {
+            width: 250px;
+            height: 100px;
+            background: lightgreen;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+
+        .absolute {
+            width: 150px;
+            height: 50px;
+            background: lightcoral;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .fixed {
+            width: 150px;
+            height: 50px;
+            background: lightseagreen;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+
+        .h-1500 {
+            height: 1500px;
+        }
+
+        .sticky {
+            width: 250px;
+            height: 80px;
+            background: lightsalmon;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static">
+        Static Content
+    </div>
+
+    <div class="h-20">&nbsp;</div>
+
+    <div class="relative">
+        Relative Content 01
+    </div>
+    <div class="h-20">&nbsp;</div>
+
+    <div class="relative">
+        Relative Content 02
+        <div class="absolute">
+            Absolute Content 01 (follow relative)
+        </div>
+    </div>
+    <div class="absolute">
+        Absolute Content 02 (follow body)
+    </div>
+    <div class="h-20">&nbsp;</div>
+
+    <div class="fixed">
+        Fixed Content (follow viewport)
+    </div>
+    <div class="sticky">
+        Sticky Content
+    </div>
+    <div class="h-1500">&nbsp;</div>
+
+    
+</body>
+
+</html>
